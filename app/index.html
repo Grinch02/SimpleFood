@@ -24,6 +24,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -36,24 +37,24 @@
           </a>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link animation" href="#">
+              <a class="menu__link menu__link--active" href="#">
                 Главная
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link animation" href="#">
+              <a class="menu__link" href="#">
                 Блюда
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link animation" href="#">
+              <a class="menu__link" href="#">
                 Контакты
               </a>
             </li>
           </ul>
-          <ul class="menu__icons">
-            <li class="menu__icon">
-              <a class="menu__icon-link animation" href="#">
+          <ul class="user-nav">
+            <li class="user-nav__links">
+              <a class="user-nav__link" href="#">
                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse cx="9.76663" cy="9.63009" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
@@ -62,8 +63,8 @@
                 </svg>
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link animation" href="#">
+            <li class="user-nav__links">
+              <a class="user-nav__link" href="#">
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
@@ -77,31 +78,33 @@
                     d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
                     stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+                <span class="user-nav__items">4</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__content">
-          <h1 class="header__title">
-            Доставка
-            <span class="header__subtitle">
-              за 15 минут
-            </span>
-            <p>Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт</p>
-          </h1>
-        </div>
-        <div class="header__foto">
-          <img src="images/scooter_uy.jpg" alt="скутер">
-        </div>
-      </div>
-      <button class="header__btn" type="button">Заказать</button>
-      <button class="header__btn" type="button">Подробнее</button>
-    </div>
   </header>
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__content">
+        <h1 class="header__title">
+          Доставка
+          <span class="header__subtitle">
+            за 15 минут
+          </span>
+          <p>Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт</p>
+        </h1>
+      </div>
+      <div class="header__foto">
+        <img src="images/scooter_uy.jpg" alt="скутер">
+      </div>
+    </div>
+    <button class="header__btn" type="button">Заказать</button>
+    <button class="header__btn" type="button">Подробнее</button>
+  </div>
+
   <main>
     <section class="categories">
       <ul class="categories__items">

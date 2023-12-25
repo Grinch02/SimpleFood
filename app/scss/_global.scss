@@ -1,3 +1,12 @@
 body {
-  
+  color: $text-color;
+  font-size: 20px;
+  line-height: 1.5;
+  @extend %quicksand-400;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
