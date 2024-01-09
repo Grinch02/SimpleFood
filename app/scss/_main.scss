@@ -1,0 +1,100 @@
+.title {
+  color: $title-color;
+  font-size: 36px;
+  @extend %quicksand-500;
+  line-height: 1.3; 
+  text-align: center;
+}
+
+.categories {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+  }
+
+  &__text {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 1px #ECECEC;
+    text-align: center;
+    padding: 22px 32px 22px 86px;
+    color: $title-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+}
+.categories__more {
+  display: block;
+  text-align: center;
+  text-decoration-line: underline;
+  padding-bottom: 120px;
+}
+
+/*   .categories__item::before {
+  content: "";
+  position: absolute;
+  transform: translate(-130%, -15%);
+  height: 44px;
+  width: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categories__item--burger::before {
+  background-image: url('../images/kitchen/burger.svg');
+  }
+.categories__item--pizza::before {
+  background-image: url('../images/kitchen/pizza.svg');
+  }
+.categories__item--sandwich::before {
+  background-image: url('../images/kitchen/sandwich.svg');
+  }
+.categories__item--aziat::before {
+  background-image: url('../images/kitchen/asia.svg');
+  }
+.categories__item--set::before {
+  background-image: url('../images/kitchen/set.svg');
+  } */
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(5, 210px);
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+
+    &__content-item {
+      border-radius: 5px;
+      background-color: #FFF;
+      box-shadow: 0px 0px 0px 1px #ECECEC;
+      padding: 20px 35px;
+    }
+/*     &__img {
+    padding: 20px 35px 10px;
+  } */
+  &__title {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  &__price {
+    @extend %quicksand-500;
+    padding-bottom: 10px;
+  }
+  &__buy {
+    font-size: 14px;
+  }
+
+  }
+
+  
+
