@@ -2,12 +2,96 @@ body {
   color: $text-color;
   font-size: 20px;
   line-height: 1.5;
-  @extend %quicksand-400;
+  @extend %rubik-400;
   background-color: $bg;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  color: $title-color;
+  font-size: 36px;
+  @extend %rubik-500;
+  line-height: 1.3; 
+  text-align: center;
+}
+
+.indent {
+  padding: 60px 0;
+}
+
+.mixitup-control-active {
+    background-color: $accent-color;
+    color: $white;
+}
+
+.animation {
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba($accent-color, 0.70);
+  }
+
+  &:active {
+    text-shadow: 2px 2px 5px rgba($title-color, 0.50);
+  }
+}
+.animation-btn {
+   border-radius: 5px;
+  &:hover {
+    background-color: #FFF;
+    box-shadow: 0 0 0 2px rgba($accent-color, 0.70);
+    color: $accent-color;
+  }
+
+  &:focus {
+    background-color: rgba($title-color, 0.10);
+    box-shadow: 0 0 0 2px rgba($accent-color, 0.70);
+  }
+
+  &:active {
+    background-color: #FFF2ED;
+  }
+}
+.animation-social {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($accent-color, 0.70);
+  }
+
+  &:active {
+    border-radius: 5px;
+    background-color: #FFF2ED;
+  }
 }

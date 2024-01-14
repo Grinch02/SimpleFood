@@ -1,26 +1,35 @@
 $accent-color: #FF6838;
 $text-color: #31352B;
 $title-color: #363853;
+$white: #fff;
+$ec: #ececec;
 $bg:#F9FAFF;
+$gray: #c2c2c2;
 
 
 
-%quicksand-300{
-  font-family: 'Rubik-light', sans-serif;
+%rubik-300{
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
 }
 
-%quicksand-400{
-  font-family: 'Rubik-Regular', sans-serif;
+%rubik-400{
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-%quicksand-400i{
-  font-family: 'Rubik-Italic', sans-serif;
+%rubik_I-400{
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
-%quicksand-500{
-  font-family: 'Rubik-Medium', sans-serif;
+%rubik-500{
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
+}
+
+.bgi {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
