@@ -61,6 +61,12 @@ body {
 .animation-btn {
   border-radius: 5px;
 
+  &:focus .animate-svg,
+  &:hover .animate-svg,
+  &:active .animate-svg {
+    fill: $accent-color;
+    }
+
   &:hover {
     background-color: #FFF;
     box-shadow: 0 0 0 2px rgba($accent-color, 0.70);

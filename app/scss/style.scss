@@ -79,9 +79,10 @@ button {
       color: $accent-color;
     }
   }
+
   &__header {
-  margin-right: 62px;
-}
+    margin-right: 62px;
+  }
 }
 
 /* .menu-list__header {
@@ -291,12 +292,13 @@ button {
 }
 
 .delivery {
-  
+
   &__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
+
   &__title {
     text-align: left;
     margin-bottom: 30px;
@@ -310,18 +312,80 @@ button {
     width: 440px;
     height: 585px;
   }
-  
+
   &__item {
     font-size: 24px;
     display: flex;
     gap: 30px 20px;
     align-items: center;
+
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
+
   &__items {
     padding-bottom: 30px;
+  }
+}
+
+.restaurants {
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+  }
+}
+
+
+.rating {
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
+
+  &__card {
+    padding: 15px 20px 20px;
+  }
+
+  &__name {
+    font-size: 24px;
+    margin-bottom: 20px;
+    @extend %rubik-400;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__time {
+    opacity: 0.9;
+    font-size: 18px;
+    @extend %rubik-300;
+    display: flex;
+    gap: 10px;
+
+    &-svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__arrow {
+    width: 79px;
+    height: 33px;
+    background-color: $accent-color;
+    border-radius: 20px;
+    display: flex;
+
+    &-svg {
+      fill: $white
+    }
   }
 }
 
@@ -350,12 +414,6 @@ button {
     display: flex;
     align-items: center;
     gap: 15px;
-
-    &:focus .footer-form__svg,
-    &:hover .footer-form__svg,
-    &:active .footer-form__svg {
-      fill: $accent-color;
-    }
   }
 
   &__svg {
